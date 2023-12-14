@@ -31,24 +31,20 @@
          <input type="email" placeholder="Email" id="Email">
          <input type="text" placeholder="Mobile No" id="MobileNo">
          <textarea placeholder="Your Message" id="text-area" rows="5" cols="10"></textarea>
-         <!-- Modified the button to call the function directly -->
          <button class="query" onclick="submitForm()">SUBMIT</button>
       </div>
   </div>
 
      <script>
       function submitForm() {
-          // Get form values
           const name = document.getElementById('Name').value;
           const email = document.getElementById('Email').value;
           const mobileNo = document.getElementById('MobileNo').value;
           const message = document.getElementById('text-area').value;
-
-          // Check if any field is empty
+        
           if (name === '' || email === '' || mobileNo === '' || message === '') {
               alert('Please fill in all fields.');
           } else {
-              // Form data is complete, display an alert with the submitted data
               const submittedData = `
                   Name: ${name}
                   Email: ${email}
