@@ -4,7 +4,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .contact, body{
-	background-image:linear-gradient(to top, rgba(8, 8, 7, 0.62),rgba(18, 18, 18, 0.574)),url(/image/bg.jpg);
+	background-image:linear-gradient(to top, rgba(8, 8, 7, 0.62),rgba(18, 18, 18, 0.574)),url('../image/bg.jpg');
     background-position: center;
     background-size: cover;
 
