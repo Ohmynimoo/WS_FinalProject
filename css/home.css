@@ -59,7 +59,7 @@
 }
 
 .container{
-	background-image:linear-gradient(to top, rgba(19, 19, 18, 0.62),rgba(28, 27, 27, 0.574)),linear-gradient(url(./image/hbg.jpg));
+	background-image: linear-gradient(to top, rgba(19, 19, 18, 0.62), rgba(28, 27, 27, 0.574)),url(./image/hbg.jpg);
 	background-size:cover;
 	height:650px;
 	text-align:center;
@@ -90,7 +90,7 @@
 }
 
 .container2{
-	background-image:linear-gradient(to top, rgba(19, 19, 18, 0.62),rgba(28, 27, 27, 0.574)),linear-gradient(url(./image/hbg.jpg));
+	background-image: linear-gradient(to top, rgba(19, 19, 18, 0.62), rgba(28, 27, 27, 0.574)),url(./image/hbg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
