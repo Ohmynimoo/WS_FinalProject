@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>Very Fast Food | Log In & Sign Up</title>
+   <link rel="stylesheet" href="/css/log_sign.css" />
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="/image/me.jpg"/>
+  </head>
+  <body>
+    <div class="nav">
+        <div class="logo">
+           <h2>Very Fast Food</h2>
+        </div>
+        <div class="navlinks">
+           <ul>
+              <li><a class="naveborder" href="index.html">Home</a></li>
+              <li><a class="naveborder" href="blog.html">Blog</a></li>
+              <li><a class="naveborder" href="menu.html">Menu</a></li>
+              <li><a class="naveborder" href="contact.html">Contact</a></li>
+              <li><a class="naveborder" href="login.html">Login</a></li> 
+           </ul>      
+        </div>
+     </div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <div class="login-box">
+        <h1>Log In</h1>
+        <br>
+        <br>
+        
+        <form>
+         <br>
+            <input type="email" id="email" placeholder="Email" />
+            <br>
+            <br>
+            <input type="password" id="password"  placeholder="Password" />
+            <br>
+            <br>
+            <input type="button" value="Submit" />
+        </form>
+    </div>    
+</div>
+    <p class="para-2">
+      Not have an account? <a href="./signup.html">Sign Up Here</a>
+    </p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          function validateForm() {
+              var email = document.getElementById("email").value;
+              var password = document.getElementById("password").value;
+  
+              // Basic validation, you can add more complex validation as needed
+              if (email.trim() === "" || password.trim() === "") {
+                  alert("Please enter both email and password.");
+              } else {
+                  // You can add code to submit the form or perform other actions
+                  alert("Log in successfully!");
+                  // document.getElementById("loginForm").submit(); // Assuming you have a form tag with id="loginForm"
+              }
+          }
+  
+          var submitButton = document.querySelector('input[type="button"]');
+          if (submitButton) {
+              submitButton.addEventListener("click", validateForm);
+          }
+      });
+  </script>
+  
+</body>
+</html>

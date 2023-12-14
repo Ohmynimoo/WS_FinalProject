@@ -1,0 +1,201 @@
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav{
+	background-color:black;
+	color:white;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+}
+
+.logo {
+    padding:10px 30px;
+	letter-spacing:2px;
+	font-size:20;
+	cursor:pointer;
+
+}
+.navlinks{
+	float:right;
+	padding-right:30px;
+	cursor:pointer;
+	
+	
+}
+.navlinks ul li{
+	display:inline-block;
+	padding-right:30px;
+	cursor:pointer;
+    
+}
+
+.navlinks ul li a{
+	text-decoration:none;
+	color:white;
+	font-size:17;
+	cursor:pointer;
+	text-transform:uppercase;
+	
+}
+
+.naveborder::after{
+	content:'';
+	width:0;
+	height:2px;
+	display:block;
+	background-color:white;
+	transition: width 0.3s ease;
+	
+}
+
+.naveborder:hover::after{
+	width:100%;
+}
+
+.container{
+	background-image:linear-gradient(to top, rgba(19, 19, 18, 0.62),rgba(28, 27, 27, 0.574)),url(/image/homebackground.gif);
+	background-size:cover;
+	height:650px;
+	text-align:center;
+}
+.container h1{
+	padding-top:120px;
+	color:wheat;
+	font-size:55px;
+}
+.container p{
+	color:white;
+	padding-top:50px;
+	font-size:25px;
+	
+}
+.order{
+	background-color:black;
+	padding:15px 10px;
+	border:none;
+	font-size:15;
+	border-radius:5px;
+	margin-top:55px;
+	transition:0.5s ease
+   
+}
+.order:hover{
+	padding:20px 20px;
+}
+
+.container2{
+	background-image:linear-gradient(to top, rgba(19, 19, 18, 0.62),rgba(28, 27, 27, 0.574)),url(/image/hbg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+img{
+	opacity: 0.9;
+}
+
+.container2, p{
+	font-size: 25px;
+}
+.container2 h1{
+	font-size: 50px;
+	color: wheat;
+	text-align:center;
+	padding-top:30px;   
+}
+.about{
+	text-align: center;
+	padding-bottom: 50px;
+	margin:50px;
+	color:white;
+}
+
+.container3 {
+	margin: 30px 20px;
+	padding-bottom: 150px;
+  }
+  
+  .container3 h1 {
+	color: wheat;
+	text-align: center;
+	padding-top: 30px;
+  }
+  
+  .bestseller {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 80px;
+	height: 400px;
+  }
+
+.bestseller, ul{
+	list-style: none;
+}
+  
+.burger, .pizza, .fries {
+	border: 2px solid white;
+	border-radius: 30px;
+	padding: 20px 30px;
+	text-align: center;
+	color: wheat;
+	box-sizing: border-box;
+}
+.buy{
+	margin-top:30px;
+	padding:10px 10px;
+	border:none;
+	border-radius:3px;
+	background-color:black;
+    transition:0.3s ease;	
+}
+.buy a{
+	color:white;
+	text-decoration:none;
+	
+}
+.buy:hover{
+	background-color:maroon;
+}
+
+.footer{
+	display:flex;
+	padding:0px;
+	align-items:center;
+	background-color:black;
+	justify-content:space-evenly;
+	color:white;
+}
+
+.footer1 h1{
+	color: white;
+}
+
+.footer3{
+	margin-top:30px
+}
+
+.footer2 ul{
+	list-style:none;
+	padding-top:20px
+}
+.footer2 ul li{
+	line-height:30px
+}
+.footer3 ul{
+	list-style:none;
+	padding-top:20px
+}
+.footer3 ul li{
+	line-height:30px;
+}
+.footer a{
+	color: white;
+	text-decoration-line: none;
+
+}

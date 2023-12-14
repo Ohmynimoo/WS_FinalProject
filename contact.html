@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="icon" href="/image/me.jpg"/>
+    <title>Very Fast Food | Contact</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+           <h2>Very Fast Food</h2>
+        </div>
+        <div class="navlinks">
+           <ul>
+              <li><a class="naveborder" href="index.html">Home</a></li>
+              <li><a class="naveborder" href="blog.html">Blog</a></li>
+              <li><a class="naveborder" href="menu.html">Menu</a></li>
+              <li><a class="naveborder" href="contact.html">Contact</a></li>
+              <li><a class="naveborder" href="login.html">Login</a></li> 
+           </ul>      
+        </div>
+     </div>
+     <div class="contact">
+      <h1> Got Some Questions? Feel Free To Contact Us </h1>
+      <div class="form">
+         <input type="text" placeholder="Name" id="Name">
+         <input type="email" placeholder="Email" id="Email">
+         <input type="text" placeholder="Mobile No" id="MobileNo">
+         <textarea placeholder="Your Message" id="text-area" rows="5" cols="10"></textarea>
+         <!-- Modified the button to call the function directly -->
+         <button class="query" onclick="submitForm()">SUBMIT</button>
+      </div>
+  </div>
+
+     <script>
+      function submitForm() {
+          // Get form values
+          const name = document.getElementById('Name').value;
+          const email = document.getElementById('Email').value;
+          const mobileNo = document.getElementById('MobileNo').value;
+          const message = document.getElementById('text-area').value;
+
+          // Check if any field is empty
+          if (name === '' || email === '' || mobileNo === '' || message === '') {
+              alert('Please fill in all fields.');
+          } else {
+              // Form data is complete, display an alert with the submitted data
+              const submittedData = `
+                  Name: ${name}
+                  Email: ${email}
+                  Mobile No: ${mobileNo}
+                  Message: ${message}
+              `;
+              alert('Form submitted successfully!\n' + submittedData);
+          }
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Fast Food | Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="/image/me.jpg"/>
+
+    <style>
+        
+        .order-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+            color: black;
+        }
+        h2, h3{
+            text-align: center;
+        }
+        .buy-message {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9f5e9;
+            border: 1px solid #9fdf9f;
+            border-radius: 5px;
+        }
+        .btn{
+            padding: 8px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }        
+   
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><h2>Very Fast Food</h2></div>
+        
+        <div class="navlinks">
+           <ul>
+              <li><a class="naveborder" href="index.html">Home</a></li>
+              <li><a class="naveborder" href="blog.html">Blog</a></li>
+              <li><a class="naveborder" href="menu.html">Menu</a></li>
+              <li><a class="naveborder" href="contact.html">Contact</a></li>
+              <li><a class="naveborder" href="login.html">Login</a></li> 
+           </ul>      
+        
+        </div>
+    </div>   
+    
+        <div class="header"><h1>Menu</h1></div>
+
+
+        <hr>
+
+        <div class="main">
+            <h2>Choice & Match</h2>
+
+            <div class="food">
+                <img src="/image/spag1.jpg" width="150px" height="100px">
+                <br>
+                <h3>Cheesy Spaghetti</h3>
+                <br>
+                <h4>₱139</h4>
+                <br>
+                <button class="ordernow" onclick="addToOrder('Cheesy Spaghetti', 139)">Order Now</button>
+            </div>
+            <div class="food">
+                <img src="/image/chicken1.jpg" width="150px" height="100px">
+                <br>
+                <h3>Fried Chicken</h3>
+                <br>
+                <h4>₱169</h4>
+                <br>
+                <button class="ordernow" onclick="addToOrder('Fried Chicken', 169)">Order Now</button>
+            </div>
+
+            <div class="food">
+                <img src="/image/fries1.jpg" width="150px" height="100px">
+                <br>
+                <h3>Potato Fries</h3>
+                <br>
+                <h4>₱50</h4>
+                <br>
+                <button class="ordernow" onclick="addToOrder('Potato Fries', 50)">Order Now</button>
+            </div>
+            <div class="food">
+                <img src="/image/burger1.jpg" width="150px" height="100px" >
+                <br>
+                <h3>Hamburger</h3>
+                <br>
+                <h4>₱99</h4>
+                <br>
+                <button class="ordernow" onclick="addToOrder('Hamburger', 99)">Order Now</button>
+            </div>
+            <div class="food">
+                <img src="/image/salad.jpg" width="150px" height="100px">
+                <br>
+                <h3>Healthy Salad</h3>
+                <br>
+                <h4>₱99</h4>
+                <br>
+                <button class="ordernow" onclick="addToOrder('Healthy', 99)">Order Now</button>
+            </div>
+            <div class="food">
+                <img src="/image/taco.jpg" width="150px" height="100px">
+                <br>
+                <h3>Taco</h3>
+                <br>
+                <h4>₱159</h4>
+                <br>
+                <button class="ordernow" onclick="addToOrder('Taco', 159)">Order Now</button>
+            </div>
+            <div class="food">
+                <img src="/image/Clubhouse.jpg" width="150px" height="100px">
+                <br>
+                <h3>Clubhouse Sandwich</h3>
+                <br>
+                <h4>₱69</h4>
+                <br>
+                <button class="ordernow" onclick="addToOrder('Clubhouse Sandwich', 69)">Order Now</button>
+            </div>
+            <div class="food">
+                <img src="/image/tunapie1.jpg" width="150px" height="100px">
+                <br>
+                <h3>Tuna Pie</h3>
+                <br>
+                <h4>₱99</h4>
+                <br>
+                <button class="ordernow" onclick="addToOrder('Tuna Pie', 99)">Order Now</button>
+            </div>
+        </div>
+    <div class="main">
+        <h2>Burgers & Pizzas Foods</h2>
+        
+        <div class="food">
+            <img src="/image/burger1.jpg" width="150px" height="100px">
+            <br>
+            <h3>Special Burger</h3>
+            <br>
+            <h4>₱59</h4>
+            <br>
+                <button class="ordernow" onclick="addToOrder('Special Burger', 59)">Order Now</button>
+
+        </div>
+        <div class="food">
+            <img src="/image/burger2.jpg" width="150px" height="100px">
+            <br>
+            <h3>Chicken Burger</h3>
+            <br>
+            <h4>₱49</h4>
+            <br>
+                <button class="ordernow" onclick="addToOrder('Chicken Burger', 49)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/burger3.jpg" width="150px" height="100px">
+            <br>
+            <h3>Double Patty Burger</h3>
+            <br>
+            <h4>₱89</h4>
+            <br>
+                <button class="ordernow" onclick="addToOrder('Double Patty Burger', 89)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/burger4.jpg" width="150px" height="100px">
+            <br>
+            <h3>Bacon Burger</h3>
+            <br>
+            <h4>₱55</h4>
+            <br>
+                <button class="ordernow" onclick="addToOrder('Bacom Burger', 55)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/pepperoni.jpg" width="150px" height="100px">
+            <br>
+            <h3>Pepperoni Pizza</h3>
+            <br>
+            <h4>₱35</h4>
+            <br>
+                <button class="ordernow" onclick="addToOrder('Pepperoni Pizza', 35)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/hawaiian.jpg" width="150px" height="100px">
+            <br>
+            <h3>Hawaiian Pizza</h3>
+            <br>
+            <h4>₱99</h4>
+            <br>
+                <button class="ordernow" onclick="addToOrder('Hawaiian Pizza', 99)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/SupremeV.jpg" width="150px" height="100px">
+            <br>
+            <h3>Supreme Veges Pizza</h3>
+            <br>
+            <h4>₱109</h4>
+            <br>
+                <button class="ordernow" onclick="addToOrder('Supreme Veges Pizza', 109)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/vegepizza.jpg" width="150px" height="100px">
+            <br>
+            <h3>Veggie Pizza</h3>
+            <br>
+            <h4>₱79</h4>
+            <br>
+                <button class="ordernow" onclick="addToOrder('Viggie Pizza', 79)">Order Now</button>
+            </div>
+        </div>
+    <div class="main">
+        <h2>Smooth Drinks</h2>
+        <div class="food">
+            <img src="/image/Drinks1.png" width="90px" height="100px">
+            <br>
+            <h3>Caramel Mocha Float</h3>
+            <br>
+            <h4>₱95</h4>
+            <br>
+            <button class="ordernow" onclick="addToOrder('Caramel Mocha Float', 95)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/Drinks2.jpg" width="90px" height="100px">
+            <br>
+            <h3>Fruity Watermelon</h3>
+            <br>
+            <h4>₱89</h4>
+            <br>
+            <button class="ordernow" onclick="addToOrder('Fruity Watermelon', 89)">Order Now</button>
+
+        </div>
+        <div class="food">
+            <img src="/image/Drinks3.jpg" width="90px" height="100px">
+            <br>
+            <h3>Choco Mango</h3>
+            <br>
+            <h4>₱79</h4>
+            <br>
+            <button class="ordernow" onclick="addToOrder('Choco Mango', 79)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/Drinks4.jpg" width="90px" height="100px">
+            <br>
+            <h3>Icy Melon</h3>
+            <br>
+            <h4>₱59</h4>
+            <br>
+            <button class="ordernow" onclick="addToOrder('Icy Melon', 59)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/Drinks5.jpg" width="90px" height="100px">
+            <br>
+            <h3>Dragon Fruit</h3>
+            <br>
+            <h4>₱99</h4>
+            <br>
+            <button class="ordernow" onclick="addToOrder('Dragon Fruit', 99)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/Drinks6.jpg" width="90px" height="100px">
+            <br>
+            <h3>Supreme Iced Tea</h3>
+            <br>
+            <h4>₱69</h4>
+            <br>
+            <button class="ordernow" onclick="addToOrder('Supreme Iced Tea', 69)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/Drinks7.jpg" width="90px" height="100px">
+            <br>
+            <h3>Smoothy Strawberry</h3>
+            <br>
+            <h4>₱99</h4>
+            <br>
+            <button class="ordernow" onclick="addToOrder('Smoothy Strawberry', 99)">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="/image/Drinks8.jpg" width="90px" height="100px">
+            <br>
+            <h3>Choco Iced Coffee</h3>
+            <br>
+            <h4>₱89</h4>
+            <br>
+            <button class="ordernow" onclick="addToOrder('Choco Iced Coffee', 89)">Order Now</button>
+                </div>
+            </div>
+            <div class="order-message">
+                <h2>Your Order</h2>
+                <ol id="order-list"></ol>
+                <h3>Total: <span id="total-amount">0</span></h3>
+                <button class="btn" onclick="undoOrder()">Undo</button>
+                <button class="btn" onclick="buyOrder()">Buy</button>
+                <div class="buy-message" id="buy-message"></div>
+            </div>
+            <script>
+                let order = [];
+                const orderListContainer = document.querySelector('.order-message');
+                const buyMessage = document.getElementById('buy-message');
+        
+                function addToOrder(item, price) {
+                    order.push({ item, price });
+                    updateOrder();
+                    orderListContainer.style.display = "block";
+                }
+        
+                function updateOrder() {
+                    let orderList = document.getElementById('order-list');
+                    let totalAmount = document.getElementById('total-amount');
+        
+                    orderList.innerHTML = ''; 
+        
+                    let total = 0;
+                    order.forEach((item) => {
+                        const li = document.createElement('li');
+                        li.textContent = `${item.item} - ₱${item.price}`;
+                        orderList.appendChild(li);
+                        total += item.price;
+                    });
+        
+                    totalAmount.textContent = total;
+                }
+        
+                function undoOrder() {
+                    if (order.length > 0) {
+                        order.pop();
+                        updateOrder();
+                    }
+                }
+        
+                function buyOrder() {
+                    if (order.length > 0) {
+                        const message = "Your order has been placed! <br> Thank you for your purchase.";
+                        const newTab = window.open("", "_blank");
+                        newTab.document.write(`<h1 style="color: black; text-align: center; margin-top:10px;">${message}</h1>`);
+                        newTab.document.close();
+                        order = [];
+                        updateOrder();
+                        orderListContainer.style.display = "none";
+                    } else {
+                        buyMessage.textContent = "Please add items to your order before clicking Buy.";
+                        buyMessage.style.display = "block";
+                    }
+                }
+        </script>
+    </body>
+</html>
