@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 body{
 	background-image:linear-gradient(to top, rgba(8, 8, 7, 0.62),rgba(18, 18, 18, 0.574)),url('../image/bg.jpg');
 }
